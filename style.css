@@ -1,0 +1,664 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+body {
+    aspect-ratio: 1920/1840;
+}
+
+/* body.custom-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+} */
+
+.body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.04166666667vw;
+    padding: 3.125vw 3.95833333vw;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100vw;
+    display: flex;
+    background: linear-gradient(to right, #135E17, #1D8A24, #DD8B06);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.77083333333vw;
+    padding: 0px 2.60416666667vw;
+    height: 7.8125vw;
+}
+
+.header p {
+    font-weight: 500;
+}
+
+.menu {
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: white;
+    font-weight: 500;
+    font-size: 1.77083333333vw;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu .i2 {
+    width: 2.34375vw;
+    height: 2.34375vw;
+}
+
+.menu .i1 {
+    width: 2.8125vw;
+    height: 2.65625vw;
+}
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+    width: fit-content;
+    margin: 0;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.04166666667vw;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1.30208333333vw;
+    background-color: #97E8FF;
+}
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    width: 37.2916666667vw;
+    height: 7.65625vw;
+
+    .up {
+        font-size: 3.33333333333vw;
+    }
+
+    .down {
+        font-size: 2.08333333333vw;
+    }
+}
+
+.banner-text p {
+    margin: 0;
+    width: 29.4270833333vw;
+    height: 7.65625vw;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+    width: 54.7916666667vw;
+    height: 20.8333333333vw;
+}
+
+.banner-option {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 0.52083333333vw 0px;
+}
+
+.up {
+    font-size: 1.82291666667vw;
+    font-weight: 600;
+}
+
+.down {
+    font-size: 1.30208333333vw;
+    font-weight: 400;
+}
+
+.in-progress {
+    display: flex;
+    align-items: center;
+    gap: 1.70572916667vw;
+    justify-content: center;
+    background-color: #FFA2B9;
+    border-radius: 1.5625vw;
+    width: 23.4375vw;
+    height: 7.8125vw;
+}
+
+.upcoming {
+    display: flex;
+    align-items: center;
+    gap: 1.70572916667vw;
+    justify-content: center;
+    background-color: #6DD2A8;
+    border-radius: 1.5625vw;
+    width: 23.4375vw;
+    height: 7.8125vw;
+}
+
+.finished {
+    display: flex;
+    align-items: center;
+    gap: 1.70572916667vw;
+    justify-content: center;
+    background-color: #6DD2A8;
+    border-radius: 1.5625vw;
+    width: 23.4375vw;
+    height: 7.8125vw;
+}
+
+.in-progress img,
+.upcoming img,
+.finished img {
+    width: 4.53125vw;
+    height: 4.53125vw;
+}
+
+.next img {
+    width: 1.82291666667vw;
+    height: 1.82291666667vw;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.04166666667vw;
+    padding: 0px;
+    height: fit-content;
+}
+
+.content-text {
+    display: flex;
+}
+
+.content-text p {
+    font-size: 2.08333333333vw;
+    font-weight: 600;
+}
+
+.content-course {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Courses {
+    display: flex;
+    flex-direction: column;
+    gap: 1.071875vw;
+    height: fit-content;
+    border-radius: 1.30208333333vw;
+    overflow: hidden;
+}
+
+.Courses img {
+    width: 20.0520833333vw;
+    height: 7.76041666667vw;
+    border-top-left-radius: 0.625vw;
+    border-top-right-radius: 0.625vw;
+}
+
+.Courses p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.259vw;
+    font-weight: 500;
+    margin: 0;
+    padding: 0px 0.52083333333vw;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0.52083333333vw;
+    gap: 1.04166666667vw;
+}
+
+.progress-bar {
+    width: 18.125vw;
+    background-color: #e0e0e0;
+    border-radius: 0.20833333333vw;
+    overflow: hidden;
+    height: 0.41666666666vw;
+}
+
+.progress {
+    height: 100%;
+    width: 8.85416666667vw;
+    background-color: #1E88E5;
+    border-radius: 0.20833333333vw;
+    transition: width 0.3s ease;
+}
+
+.progress-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72916666666vw;
+    font-weight: 500;
+    color: #666666;
+}
+
+.Courses-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0.52083333333vw;
+}
+
+.Courses-btn button {
+    width: 33.7%;
+    background-color: #D945F3;
+    border-radius: 0.625vw;
+    color: white;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.04166666667vw;
+    font-weight: 400;
+    text-align: center;
+    border: 0;
+}
+
+.footer {
+    display: flex;
+    width: 100vw;
+    background: linear-gradient(to right, #135E17, #1D8A24, #DD8B06);
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.77083333333vw;
+    padding: 0px 2.60416666667vw;
+}
+
+.footer-menu {
+    width: 45.9%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5625vw;
+}
+
+.footer-menu img {
+    width: 2.734375vw;
+    height: 2.734375vw;
+}
+
+.footer-chat {
+    height: 7.8125vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-chat img {
+    width: 4.21875vw;
+    height: 4.21875vw;
+}
+
+@media (max-width: 768px) {
+    body {
+        aspect-ratio: 768/1161;
+    }
+
+    .container {
+        gap: 1.953125vw;
+        padding: 1.953125vw 1.30208333333vw;
+        margin: 0 auto;
+    }
+
+    .header {
+        font-size: 2.125vw;
+        padding: 0px 4.55729166667vw;
+        height: 9.11458333333vw;
+    }
+
+    .header p {
+        font-weight: 400;
+    }
+
+    .menu {
+        align-items: center;
+        width: 60vw;
+    }
+
+    .menu picture {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu a {
+        font-weight: 400;
+        font-size: 2.125vw;
+        text-decoration: none;
+    }
+
+    .menu .i2 {
+        width: 2.1875vw;
+        height: 2.1875vw;
+    }
+
+    .menu .i1 {
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .content {
+        gap: 1.953125vw;
+        padding: 0px;
+        height: 63.5416666667vw;
+    }
+
+    .content-text p {
+        text-align: center;
+        width: 100%;
+        font-weight: 600;
+        font-size: 3.33333333333vw;
+        padding: 0px;
+    }
+
+    .content-course {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 11.0677083333vw;
+        align-content: space-between;
+        height: 56.640625vw;
+    }
+
+    .Courses {
+        gap: 1.97916666667vw;
+        border-radius: 2.08333333333vw;
+    }
+
+    .Courses img {
+        width: 32.0833333333vw;
+        height: 12.3697916667vw;
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw;
+    }
+
+    .Courses p {
+        font-size: 2.02vw;
+        margin: 0;
+        padding: 0px 0.83333333333vw;
+    }
+
+    .progress-container {
+        height: fit-content;
+        padding: 0px 0.83333333333vw;
+        gap: 1.953125vw;
+    }
+
+    .progress-bar {
+        border-radius: 0.33333333333vw;
+        height: 0.66666666666vw;
+        width: 29.0364583333vw;
+    }
+
+    .progress {
+        border-radius: 0.33333333333vw;
+        width: 14.1927083333vw;
+        transition: width 0.3s ease;
+    }
+
+    .progress-label {
+        font-size: 1.16666666667vw;
+        color: #666666;
+    }
+
+    .Courses-btn {
+        padding: 0px 0.83333333333vw;
+    }
+
+    .Courses-btn button {
+        width: 10.8072916667vw;
+        height: 2.47395833333vw;
+        border-radius: 1vw;
+        color: white;
+        font-size: 1.66666666667vw;
+    }
+
+    .footer {
+        padding: 0px 2.60416666667vw;
+        height: 9.11458333333vw;
+    }
+
+    .footer-menu {
+        width: 76.4440104167vw;
+        gap: 2.60416666667vw;
+    }
+
+    .footer-menu img {
+        width: 4.55729166667vw;
+        height: 4.55729166667vw;
+    }
+
+    .footer-chat picture {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-chat {
+        height: 100%;
+    }
+
+    .chat {
+        width: 7.03125vw;
+        height: 7.03125vw;
+        border-radius: 3.515625vw;
+    }
+
+    .footer-chat img {
+        width: 7.03125vw;
+        height: 7.03125vw;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        aspect-ratio: 480/1170;
+    }
+
+    .body {
+        gap: 3.125vw;
+    }
+
+    .container {
+        gap: 3.125vw;
+        padding: 0px 6.5625vw;
+        margin: 0 auto;
+    }
+
+    .header {
+        font-size: 1.77083333333vw;
+        padding: 0px 6.5625vw;
+        height: 7.29166666667vw;
+        stroke-width: 0.05208333333vw;
+    }
+
+    .header p {
+        font-weight: 400;
+    }
+
+    .menu {
+        width: 50vw;
+        align-items: center;
+    }
+
+    .menu picture {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu a {
+        font-weight: 400;
+        font-size: 1.77083333333vw;
+        text-decoration: none;
+    }
+
+    .menu .i2 {
+        width: 1.82291666667vw;
+        height: 1.82291666667vw;
+    }
+
+    .menu .i1 {
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .content {
+        gap: 2.08333333333vw;
+        padding: 0px;
+        width: 86.875vw;
+        height: 109.375vw;
+    }
+
+    .content-text {
+        justify-content: center;
+    }
+
+    .content-text p {
+        width: fit-content;
+        font-weight: 600;
+        font-size: 4.16666666667vw;
+        padding: 0px;
+    }
+
+    .content-course {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: visible;
+        padding: 0px;
+        gap: 3.125vw;
+        height: 101.041666667vw;
+    }
+
+    .Courses {
+        gap: 3.06041666667vw;
+        border-radius: 3.90625vw;
+    }
+
+    #hid {
+        display: none;
+    }
+
+    .Courses img {
+        width: 60.15625vw;
+        height: 23.3333333333vw;
+        border-top-left-radius: 1.875vw;
+        border-top-right-radius: 1.875vw;
+    }
+
+    .Courses p {
+        font-size: 3.77vw;
+        margin: 0;
+        padding: 0px 1.5625vw;
+    }
+
+    .progress-container {
+        padding: 0px 1.5625vw;
+        gap: 3.125vw;
+    }
+
+    .progress-bar {
+        width: 54.375vw;
+        border-radius: 0.625vw;
+        height: 1.25vw;
+    }
+
+    .progress {
+        width: 26.6666666667vw;
+        border-radius: 0.625vw;
+        transition: width 0.3s ease;
+    }
+
+    .progress-label {
+        font-size: 2.1875vw;
+        color: #666666;
+    }
+
+    .Courses-btn {
+        padding: 0px 1.5625vw;
+    }
+
+    .Courses-btn button {
+        width: 20.4166666667vw;
+        height: 4.79166666667vw;
+        border-radius: 1.875vw;
+        color: white;
+        font-size: 3.125vw;
+    }
+
+    .footer {
+        padding: 0px 3.125vw;
+        height: 7.29166666667vw;
+    }
+
+    .footer-menu {
+        width: 66.4440104167vw;
+        gap: 1.5625vw;
+    }
+
+    .footer-menu img {
+        width: 2.73541666667vw;
+        height: 2.73541666667vw;
+    }
+
+    .footer-chat picture {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-chat {
+        height: 100%;
+    }
+
+    .chat {
+        width: 4.21875vw;
+        height: 4.21875vw;
+        border-radius: 2.11041666667vw;
+    }
+
+    .footer-chat img {
+        width: 4.21875vw;
+        height: 4.21875vw;
+    }
+}
